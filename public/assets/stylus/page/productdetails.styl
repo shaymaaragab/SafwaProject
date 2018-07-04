@@ -1,0 +1,88 @@
+.productdetails 
+	margin 30px 0
+	&__gallary
+		img 
+			width 100%
+	&__type 
+		display flex
+		flex-direction column
+	&__sort
+		h3
+			margin-top 5px
+			color lightness( $dark , 40%)
+			text-transform capitalize
+		p
+			color lightness( $dark , 50%)	
+			margin 3px 0
+	&__specifics
+		display flex
+		flex-direction row 
+		align-items center
+		p
+			flex 0.5
+			color lightness( $dark , 50%)
+			text-transform capitalize
+			span
+				color lightness( $dark , 40%)
+	&__download
+		display flex
+		flex-direction row
+		align-items center
+		a
+			color $white
+			background-color $green
+			text-transform capitalize	
+			padding 10px 20px 
+			border-radius 50px		
+			&:hover
+				text-decoration none	
+		div
+			flex 1
+			text-align end	
+	.slick-next:before	
+		color $gray
+		content '\f105'
+		font-family FontAwesome
+		text-align center
+		line-height 50px
+		font-weight bold
+	.slick-prev:before
+		color $gray
+		content '\f104'
+		font-family FontAwesome
+		text-align center
+		line-height 50px
+		font-weight bold		
+.accessories
+	margin 30px 0
+	&-items
+		text-align center
+		padding 20px
+		margin 0 10px
+		img 
+			width 100%
+			min-height 223px
+			border 1px solid $gray
+			transform scale(0.9)
+			&:hover
+				transform scale(1)
+				box-shadow 0px 0px 5px 5px rgba(0,0,0,0.1)
+		h3
+			text-transform capitalize
+			color lightness( $dark , 40%)													
+	.slick-next:before	
+		color $gray
+		content '\f105'
+		font-family FontAwesome
+		text-align center
+		line-height 50px
+		font-weight bold
+		font-size 25px
+	.slick-prev:before
+		color $gray
+		content '\f104'
+		font-family FontAwesome
+		text-align center
+		line-height 50px
+		font-weight bold
+		font-size 25px

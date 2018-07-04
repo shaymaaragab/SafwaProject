@@ -1,0 +1,66 @@
+.product
+	background-color $green
+	padding 20px 0
+	h2
+		color $white
+		text-transform capitalize
+		text-align center
+		padding 20px 0
+	img
+		width 100%
+	&-items
+		position relative
+		top 0
+		bottom 0
+		left 0
+		right 0
+		
+		&:hover
+			background-color $dark	
+			.product-salary
+				display block
+			img 
+				opacity 0.5 	
+	&-salary
+		display none
+		position absolute
+		top 35%
+		left 10%
+		p
+			font-size 25px
+			color $white
+			font-weight bold
+		a
+			width 50%
+			text-decoration none
+	&__link
+		display flex
+		justify-content center	
+		margin 25px 0	
+	.is-white
+		border-color $white	
+		color $white	
+		
+		i
+			border-left-color $white
+	.slick-slide img
+		width 100% !important
+	.slick-next
+		width 50px
+		height 50px
+		text-align center
+		background-color $dark
+		color $white
+		&:before
+			color $white
+			content '\f105'
+			font-family FontAwesome
+			text-align center
+			opacity 1
+			line-height 50px
+
+	.slick-prev
+		&:before
+			content ' '		
+    	
+				

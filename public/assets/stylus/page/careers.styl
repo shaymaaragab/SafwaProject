@@ -1,0 +1,116 @@
+.careers
+	margin-top 50px
+	&__title
+		padding 30px
+		text-align center
+		h1
+			text-transform capitalize
+			color lightness( $dark , 30%)
+		p
+			color lightness( $dark , 40%)
+			font-weight bold	
+			span
+				color $green
+	&__details
+		display flex
+		flex-direction row
+		align-items center	
+		border-bottom 1px solid $gray
+		padding 20px 10px
+		margin 20px 0
+		&:nth-child(1)	
+			background #faf9f9
+	&__head
+		display flex
+		flex-direction row	
+		align-items center	
+		h2
+			color lightness( $dark , 30%)
+			text-transform capitalize
+			flex 0.5
+	&-city
+		color lightness( $dark , 50%)	
+	&__type
+		flex 1 1 auto
+		p
+			color lightness( $dark , 50%)	
+			font-weight bold
+	&__more
+		a
+			padding	10px 30px
+			border-radius 50px
+			background lightness( $dark , 40%)
+			color $white
+			text-transform capitalize
+			&:hover
+				text-decoration none
+	&__contact
+		margin 10px 0
+		h2
+			flex 0.8
+	&--details
+			h4
+				color lightness( $dark , 40%)	
+				text-transform capitalize	
+			p
+				color lightness( $dark , 50%)	
+	&__apply
+		margin 30px 0
+		a.form
+			width 80.5%
+			padding 7px 0px 7px 15px
+			background-color lightness( $gray , 95%)
+			font-size 16px
+			text-transform capitalize
+			display flex
+			flex-direction row
+			align-items center
+			border 1px solid lightness( $gray , 80%)
+			&:hover
+				text-decoration none
+			span
+				color lightness( $dark , 55%)
+				flex 1
+			i
+				color lightness( $dark , 55%)
+				padding 0 10px
+				cursor pointer
+		h4
+			color lightness( $dark , 40%)	
+			text-transform capitalize
+			margin-bottom 35px
+		input
+			padding 7px 0px 7px 15px
+			background-color lightness( $gray , 95%)
+			color $dark
+			font-size 16px
+			text-transform capitalize
+			border 1px solid lightness( $gray , 80%)
+			margin-bottom 10px
+		.name
+			width 80.5%
+		.phone
+			width 40%
+		.email
+			width 40%			
+		button
+			background-color lightness( $gray , 50%)
+			color $white
+			text-transform uppercase
+			margin 15px 0
+			letter-spacing 1px
+			border-color lightness( $gray , 50%)
+			font-weight bold
+			&:hover
+				background-color lightness( $gray , 30%)
+				color $white
+				border-color lightness( $gray , 30%)				
+@media (max-width: 768px)
+	.careers__details 
+		flex-direction column
+		justify-content center
+		align-items center
+	.careers__head
+		flex-direction column
+		justify-content center
+		align-items center

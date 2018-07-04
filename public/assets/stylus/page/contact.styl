@@ -1,0 +1,139 @@
+.contacts	
+	padding 25px 0
+	color $dark
+	text-align center
+	h2
+		text-align center
+		text-transform capitalize
+		padding 20px 0	
+		color $green
+		background-color $white
+		display inline-block
+	&__sumbit
+		input
+			width 100%
+			padding 7px 15px 7px 15px
+			background-color $ofwhite
+			border 0
+			color $dark
+			font-size 16px
+			text-transform capitalize
+			margin 5px 0
+		.form-control
+			margin 10px 0
+			padding 7px 15px 7px 15px
+			background $ofwhite
+			border none
+			padding 10px
+			text-transform uppercase
+			color $white
+			word-spacing 2px
+			letter-spacing 2px
+			outline none
+			font-size: 18px
+			min-height: 250px
+			resize none	
+		button
+			width 100%
+			background-color lightness( $gray , 30%)
+			color $white
+			text-transform uppercase
+			font-size 16px
+			margin 15px 0
+			letter-spacing 1px
+			border-color lightness( $gray , 30%)
+			&:hover
+				background-color lightness( $gray , 30%)
+				color $white
+				border-color lightness( $gray , 30%)
+		select
+			width 100%
+			padding 8px 15px 9px 15px
+			background-color $ofwhite
+			border 0
+			color $dark
+			font-size 16px
+			text-transform capitalize
+			margin 5px 0	
+				
+	&-address
+		display flex
+		align-items baseline
+		justify-content center
+		i
+			font-size 25px
+			color lightness( $dark , 30%)
+	&-type
+		margin 0 0 8px 15px
+		h6
+			text-transform uppercase
+			font-weight bold
+			font-size 20px	
+		p
+			text-transform capitalize	
+			a
+				color lightness($dark ,  60%)
+				text-decoration underline
+				&:hover
+					color $green
+	&__gallary
+		display flex
+		flex-direction row
+		align-items center
+		justify-content space-between
+		margin 30px 0
+	&__maps 
+		display flex
+		align-items baseline
+		justify-content center
+		flex 0.5	
+	&__item
+		display flex
+		flex-direction column
+		align-items center
+		margin 30px 0
+		flex 0.5
+		h4
+			text-transform capitalize
+			color lightness($dark ,  50%)
+		p
+			text-transform capitalize
+			color lightness($dark ,  60%)
+	
+		img
+			background-position center center
+			background-repeat no-repeat
+			background-size cover
+			background-image url('../img/puzzle.png')
+			transition 0.4s
+			margin 50px 0 100px
+			transform scale(0.9)
+			width 100%
+			&:hover
+				transform scale(1)
+			&focus
+				outline none
+		img
+			padding 20% 20% 0 20%
+			display block
+			margin auto
+			width 100%			
+	&--social
+		a
+			color lightness($dark ,  60%)
+			margin 0 5px
+			&:hover
+				color $green
+	.map
+		margin 0 5px 25px
+		h6
+			font-size 16px	
+			font-weight 400
+			margin-bottom 3px
+		p	
+			margin-bottom 0	
+#map
+	min-height 400px
+	background-size cover
+	margin 30px 0 					
+	

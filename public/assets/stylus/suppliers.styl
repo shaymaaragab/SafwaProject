@@ -1,0 +1,101 @@
+.supplier
+	padding 25px 0
+	text-align center
+	h2
+		color $green
+		padding 20px 0
+		text-transform capitalize
+		text-align center
+		display inline-block
+		background-color $white
+	&__logo
+		text-align center	
+	img
+		margin 40px 0
+		opacity 0.4
+	&__more
+		display flex
+		justify-content center
+		a
+			border-color $green
+			color $green
+		i
+			border-left-color $green
+	&__name
+		color lightness( $dark , 40%)
+		text-transform capitalize
+		margin 25px
+		img
+			margin-bottom 10px
+		&:after
+			clear both	
+		.btn-group
+			float right
+			button
+				color $green
+				border 1px solid $green	
+				text-transform capitalize
+				span
+					margin 0 0 0 10px
+				&:hover
+				&:active
+				&:focus
+				&:visited
+					background-color $white !important
+					color $green !important
+					border-color $green !important
+			ul
+				background-color $green
+				border-color $green
+				li 
+					text-transform capitalize
+				a
+					color $white	
+					&:hover
+						background-color $green		
+	&__page
+		margin-top 50px					
+	&__product
+		display flex
+		flex-direction row	
+		flex-wrap wrap
+		margin 0 0 25px 0
+	&__block
+		width 80%
+		margin 0 auto		 
+	&__type
+		border 1px solid $dark
+		flex 1 1 auto 
+		margin 0 5px
+		text-align center	
+		display flex
+		flex-direction column
+		align-items center	
+		transform scale(0.9)
+		&:hover
+			transform scale(1)	
+			box-shadow 0px 0px 5px 5px rgba(0,0,0,0.1)
+			
+		h3
+			text-transform uppercase
+			color lightness( $dark , 30%)
+			font-size 18px
+		p
+			color $dark
+			text-transform capitalize	
+	.slick-slide
+		float left !important		
+	.slick-prev:before
+		content ' '	
+	.slick-next:before
+		content	' '	
+	.slick-dots li button:before
+		color $green
+		font-size 12px			
+			
+				
+
+
+
+		
+			

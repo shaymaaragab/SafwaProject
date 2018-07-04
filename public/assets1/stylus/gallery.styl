@@ -1,0 +1,44 @@
+.gallery
+    &-item
+        position: relative
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: contain
+        background-image: url('../img/puzzle.png')
+        transition: 0.4s
+        margin: 40px 0 100px
+        +mobile()
+            margin: 40px 0
+
+        &:focus
+            outline: none
+        img
+            padding: 10% 10% 0 10%;
+            max-width: 50%
+            display: block
+            margin: auto
+
+        &.slick-center
+            transform: scale(2)
+            &:after
+                transition: 0.5s
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                width: 25%
+                left: 37.5%
+                height: 7%
+                border-radius: 50%
+                background-image: radial-gradient(alpha(lighten($gray, 50%), 50%), transparent);
+
+.slick-next
+    &:before
+        font-family: 'fontawesome'
+        color: $dark
+        content: '\f105'
+.slick-prev
+    &:before
+        font-family: 'fontawesome'
+        color: $dark
+        content: '\f104'

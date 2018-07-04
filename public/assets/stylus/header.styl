@@ -1,0 +1,271 @@
+body
+	background-image url('../img/body-2.png')
+	background-position center center
+p,strong
+	word-break break-all	
+header
+	#searchlink 
+		i
+			margin-top 10px
+	.navbar:nth-child(1)
+		background #d8e843
+		border 0
+		border-radius 0
+		height 115px
+		margin-bottom 15%
+		z-index 1
+		
+	.header-top
+		display flex
+		flex-direction row
+		align-items center
+		justify-content flex-end
+		padding 10px 0
+		.input-group-addon, .input-group-btn
+			width 1px
+		.input-group	
+			margin 0 10px
+		.headersearch	
+			height 38px
+			background none
+			border-color $white
+			outline none
+			&::placeholder
+				color $white
+		 .btn-default 
+			background none
+			color $white
+			border-color $white
+			height 38px
+			text-transform capitalize
+			margin-right 10px
+			&:hover
+			&:active
+			&:focus
+			&:visited		
+				background none !important
+				color $white !important
+				border-color $white !important
+			.caret
+				margin-left 5px
+		a 
+			padding 0 5px		
+		img
+			margin 0 5px
+		ul
+			background $green
+			a
+				color $white
+				text-transform capitalize	
+		ul.lang
+			background-color transparent
+			font-weight bold
+			margin-bottom 0
+			padding 0
+			li
+				list-style none
+				border 1px solid $white
+				padding 6px 12px
+				
+		.headerlogo
+			display flex
+			flex-direction row
+			align-items center
+			justify-content flex-start
+			flex 0.5
+ 	.menutwo
+		border 0
+		position fixed 
+		background none 
+		top 10%
+		left 7%
+		z-index 1
+		.navbar-brand
+			height auto
+			padding 0
+			/*background-image url('../img/backgroundlogo.png')*/
+			background-repeat no-repeat
+			background-size cover
+			position absolute
+			top -68px
+			left -25px
+			width 39%
+			display flex
+			justify-content center
+			img
+				/*padding 12px 2% 163px 2%*/
+				margin 0 auto
+				max-width 100%
+			
+		ul
+			float right
+			position relative
+			top 10px
+			left 135px
+			li:nth-child(even)
+				text-transform capitalize
+				font-weight bold
+				background-image url('../img/li.png')
+				background-repeat no-repeat
+				background-size cover
+				width 119px
+				height 100px
+				text-align center
+				position relative
+				transform scale(1)
+				&:hover
+					transform scale(1.1)
+				a
+					position relative
+					top 24px
+					color $dark
+					&:hover
+						color $green
+			li:nth-child(odd)
+				text-transform capitalize
+				font-weight bold
+				background-image url('../img/li1.png')
+				background-repeat no-repeat
+				background-size cover
+				width 100px
+				height 117px
+				text-align center
+				position relative
+				transform scale(1)
+				&:hover
+					transform scale(1.1)
+				a
+					position relative
+					top 32px
+					color $dark
+					&:hover
+						color $green
+			li:nth-child(1)
+				top -11px
+				left 24px
+				
+			li:nth-child(3)
+				left -24px
+				top -8px	
+			li:nth-child(4)
+				left -48px
+				top 2px
+			li:nth-child(5)
+				left -72px
+				top -6px						
+			li:nth-child(6)
+				left -96px
+				top 4px
+			li:nth-child(7)
+				left -120px
+				top -4px
+			li:nth-child(8)
+				left -144px
+				top 6px
+				width 120px				
+			.about
+				background-image url('../img/menu1.png')
+				background-repeat no-repeat
+				background-size cover
+				background-position center center	
+				&:hover
+					transform scale(1)
+					a
+						color $dark !important 
+				a
+					color $green !important	
+			.products
+				background-image url('../img/menu2.png')
+				background-repeat no-repeat
+				background-size cover
+				background-position center center			
+				&:hover
+					transform scale(1)
+					a
+						color $dark !important 
+				a
+					color $green !important 
+@media (max-width: 767px)
+	header .navbar:nth-child(1)
+		height 120px					
+	header .header-top
+		justify-content space-between
+		flex-wrap wrap
+	header .header-top .headerlogo a 
+		width 80px	
+	header .header-top .input-group 
+		order 2
+		margin-top 10px
+		margin-right 0
+		margin-left 0
+		width 100%
+	header .header-top .headerlogo
+		order 1					
+@media (max-width: 1060px)
+	section
+		padding-top 80px
+	.menutwo
+		top 0
+		right 7%
+		position fixed
+	.menutwo .navbar-brand img
+		padding 0	
+	.menutwo ul
+		left -10%
+		top -75px
+		position relative
+	.menutwo .navbar-brand
+		background-image none
+		display block
+		position static
+		width 50%
+		top 0 
+		left 0
+	.menutwo ul li:nth-child(odd)
+		background-image none
+		position relative
+		width initial
+		height auto
+		top 0
+		left 0
+	.menutwo ul li:nth-child(even)
+		background-image none
+		position relative			
+		width initial
+		height auto
+		top 0 
+		left 0
+	.menutwo ul li:nth-child(even) a
+		position relative	
+		padding 5px
+		top 0
+		left 0
+	.menutwo ul li:nth-child(odd) a	
+		position relative
+		padding 5px
+		top 0
+		left 0
+@media (max-width 768px) 
+	.menutwo ul 
+		left -6px		
+@media (max-width 767px)
+	.menutwo ul
+		width 100%	
+	.menutwo .navbar-brand img
+		width 50%
+@media (min-width 1768px)  
+	.menutwo
+		left 16%
+		top 5%				
+@media (min-width 2560px)  
+	.menutwo
+		left 28%
+		top 5%	
+@media (max-width 425px)
+	.menutwo 
+		position relative
+		top 120px
+		left 0
+		right 0
+	.menutwo ul 
+		position static	

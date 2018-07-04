@@ -1,0 +1,19 @@
+.blog .flip-container {
+  perspective: 1000px;
+}
+.blog .flip-container:hover .flipper,
+.blog .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+.blog .flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.blog .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.blog .back {
+  transform: rotateY(180deg);
+}

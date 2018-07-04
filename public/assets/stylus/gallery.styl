@@ -1,0 +1,77 @@
+.gallery
+    display flex
+    flex-direction row
+    height 450px
+    &-item
+        text-align center
+        &:nth-child(2)
+            align-self flex-end
+        img
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            background-image: url('../img/puzzle3.png')
+            transition: 0.4s
+            margin: 50px 0 100px
+            transform scale(0.6)
+            &:hover
+                background-image: url('../img/puzzle2.png')
+                transform scale(0.8)
+        +mobile()
+            margin: 10px 0
+        &:focus
+            outline: none
+        img
+            padding: 20% 20%;
+            max-width: 60%
+            display: block
+            margin: auto
+        p
+            color lightness($dark ,  60%)    
+        &.slick-center
+            transform: scale(2)
+            &:after
+                transition: 0.5s
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                width: 25%
+                left: 37.5%
+                height: 7%
+                border-radius: 50%
+                background-image: radial-gradient(alpha(lighten($gray, 50%), 50%), transparent);
+            +mobile()
+                transform: scale(1)
+
+.slick-next
+    &:before
+        color: $dark
+        content: '>'
+.slick-prev
+    &:before
+        color: $dark
+        content: '<'
+.index
+    nav.navbar 
+        background none !important
+    .header-top button    
+        color $green
+        border-color $green
+        &:hover
+        &:active
+        &:focus
+        &:visited       
+            background none !important
+            color $green !important
+            border-color $green !important
+        ul.lang
+            background-color transparent
+            font-weight bold
+            margin-bottom 0
+            li
+                list-style none
+                border 1px solid $white
+                padding 6px 12px   
+    .footer-social
+        flex 0        

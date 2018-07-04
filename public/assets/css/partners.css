@@ -1,0 +1,25 @@
+.supplier {
+  padding: 25px 0;
+}
+.supplier h2 {
+  color: $green;
+  padding: 20px 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+.supplier img {
+  margin: 40px 0;
+  opacity: 0.4;
+  width: 100%;
+}
+.supplier__more {
+  display: flex;
+  justify-content: center;
+}
+.supplier__more a {
+  border-color: $green;
+  color: $green;
+}
+.supplier__more i {
+  border-left-color: $green;
+}

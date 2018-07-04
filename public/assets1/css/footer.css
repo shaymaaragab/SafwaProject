@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  padding: 10px 100px;
+  height: 60px;
+}
+.footer-copywright {
+  flex: 1;
+}
+.footer-logo img {
+  max-height: 100%;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  fill: $gray;
+}
+.social:hover,
+.social:focus {
+  fill: $green;
+}

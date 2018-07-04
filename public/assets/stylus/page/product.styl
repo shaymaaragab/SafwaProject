@@ -1,0 +1,273 @@
+
+.product
+	padding 0 0 20px 0
+	text-align center
+	h2
+		color $green
+		text-transform capitalize
+		text-align center
+		padding 20px 0
+		display inline-block
+		background-color $white
+	&-items
+		position relative
+		top 0
+		bottom 0
+		left 0
+		right 0
+		&:hover
+			background-color $dark	
+			.product-salary
+				display block
+			img 
+				opacity 0.5 	
+	&-salary
+		display none
+		position absolute
+		top 50%
+		left 10%
+		p
+			font-size 25px
+			color $green
+			font-weight bold
+		a
+			width 50%
+			text-decoration none
+	&__title	
+		color $green
+		text-transform capitalize
+		margin 20px
+		display flex
+		flex-direction row
+		align-items center
+		align-content space-between
+		h1
+			flex 1
+			margin-top 50px
+		.btn-group	
+			flex 0.1
+			button
+				color $green
+				border-color $green
+				width 100%
+				text-transform capitalize
+				span
+					margin 0 0 0 10px
+				&:hover
+				&:active
+				&:focus
+				&:visited
+					background-color $white !important
+					color $green !important
+					border-color $green !important
+			ul
+				background-color $green
+				border-color $green
+				li 
+					text-transform capitalize
+				a
+					color $white	
+					&:hover
+						background-color $green
+				
+	&__type
+		display flex
+		flex-direction row
+		margin 0 0 25px 0
+	&__details
+		border 1px solid $gray	
+		flex 1 
+		margin 5px 
+		display flex
+		flex-direction column
+		align-items center
+		trasform scale(0.8)
+		&:hover
+			trasform scale(1)
+			box-shadow 0px 0px 5px 5px rgba(0,0,0,0.1)
+		h3
+			text-transform uppercase
+			color lightness( $dark , 30%)
+			font-size 18px
+		p
+			color $dark
+			text-transform capitalize		
+	&__image
+		text-align center
+		width 100%
+		position relative
+		top 0
+		left 0
+		img:nth-child(1) 
+			display inline
+		&:hover
+			background-color $dark
+			.product__share
+				display block
+			img:nth-child(1)
+				opacity 0.2		
+		img.new
+			position absolute
+			top 0
+			left 0
+			z-index 111	
+		.video-link 
+			position absolute
+			top 40%
+			left 40%
+			color $white
+			border 1px solid $white
+			width 50px
+			height 50px
+			border-radius 50%
+			i
+				margin-top 16px
+	&__share
+		display none
+		color $white
+		
+		p.onelink
+			position absolute
+			top 50%
+			right 50%	
+			width 30px
+			height 30px
+			line-height 30px
+			color $dark
+			background-color $white	
+			border-radius 50%
+			margin 0 20px
+			cursor pointer
+			&:hover	
+			 .product--social 
+						visibility visible	
+		a.twolink
+			position absolute
+			top 50%
+			left 50%	
+			width 30px
+			height 30px
+			line-height 30px
+			color $dark
+			background-color $white	
+			border-radius 50%
+			margin 0 20px			
+	&--social
+		visibility hidden
+		position absolute
+		top 65%
+		left 0
+		width 100%
+		a
+			width 30px
+			height 30px
+			line-height 30px
+			background-color $white
+			color $dark
+			border-radius 50%
+			text-align center
+			margin 0 
+			display inline-block
+			i
+				font-size 15px
+	&__link
+		display flex
+		justify-content center	
+		margin 25px 0	
+		i
+			border-left-color $green
+	.slick-next
+		width 50px
+		height 50px
+		text-align center
+		background-color $dark
+		color $white
+		&:before
+			color $white
+			content '\f105'
+			font-family FontAwesome
+			text-align center
+			opacity 1
+			line-height 50px
+	&__sidebar
+		h3
+			margin 0 0 15px 0	
+			text-transform capitalize
+			color lightness( $dark , 40%)
+		.sidebar-menu
+			li
+				margin-bottom 10px
+				text-transform capitalize
+			a
+				color lightness( $dark , 40%)
+				&:hover
+					color $gray
+					text-decoration none
+					font-weight bold
+	.slick-prev
+		&:before
+			content ' '		
+@media (max-width: 767px)
+	.product__sidebar 
+		text-align center 
+		
+.productnew 
+	margin-top 18%
+	&__title 
+		text-transform capitalize
+		color $green
+		text-align center	
+	&__name 
+		text-transform capitalize
+		color $green
+	&__more
+		text-align center
+		color $green
+		h3
+			color $green
+			text-transform capitalize
+			text-align center
+	&__price 
+		font-size 18px
+		margin-top 10px		
+	&__img 
+		border 1px solid $gray
+		text-align center
+		padding 15px
+		img 
+			height 100px
+			width 100%
+	&__order
+		button 
+			width 100%
+			border-radius 0
+			text-transform capitalize	
+	&__file
+		margin 10px 0
+		button
+			width 100%
+			border-radius 0	 	
+			text-transform capitalize		
+	&__model
+		color lightness($gray, 30%)	
+		text-transform capitalize
+		span:after
+			content ':'		
+		b	
+			text-transform uppercase
+	&__details
+		color $dark
+	&__video
+		position relative
+		margin 10px 0
+		.video-link-icon
+			position absolute
+			top 50%
+			left 50%
+			color $white
+			width 50px
+			height 50px
+			line-height 50px
+			border 1px solid $white
+			border-radius 50%
+			text-align center	

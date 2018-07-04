@@ -1,0 +1,96 @@
+.blog
+	&__inner
+		margin 35px 0
+		img:nth-child(1)
+			height 500px
+			width 100%
+	&--details
+		margin 50px 0	
+	&--head
+		margin 10px 0 30px
+		h3
+			text-transform capitalize
+			color lightness($dark , 40%)		
+		p
+			color lightness($dark , 50%)
+			span
+				text-transform capitalize
+	&--description
+		margin 10px 0 30px 
+		h3
+			text-transform capitalize
+			color lightness($dark , 40%)
+		p
+			color lightness($dark , 50%)
+			margin 20px 0
+	&--img
+		background $dark		
+		img				
+			opacity 0.5	
+			height 227px !important
+	&--header
+		display flex
+		flex-direction row
+		align-items center
+		h5
+			text-transform capitalize
+			color lightness($dark , 40%)
+			line-height 2
+			margin 20px 10px
+		.blog--border
+			height 40px
+			width 5px
+			color $orange
+	&--paragraph
+		margin 20px 0		
+		p
+			color lightness($dark , 50%)	
+	&--share
+		display flex
+		flex-direction row
+		align-items center
+		justify-content space-between
+		flex-wrap wrap
+		h5
+			color lightness($dark , 40%)
+			text-transform capitalize
+			font-weight 600
+	&--social
+		border 1px solid lightness($gray , 70%)	
+		padding 10px 30px 10px 20px	
+		border-radius 5px
+		&:hover
+			border-color $green
+			a
+				color $green
+		a
+			color lightness($dark , 60%)
+			text-transform capitalize
+			text-decoration none
+			display flex
+			align-items center
+			i
+				font-size 20px
+				margin 0 10px
+	&--link
+		display flex
+		flex-direction row
+		align-items center
+		margin 25px 0
+		h5
+			text-transform capitalize
+			color lightness($dark , 40%)
+			margin 0 20px 0 0
+			font-weight 600
+		a
+			color lightness($dark , 60%)	
+			text-decoration none
+			margin 0 3px
+			&:hover
+				color $green		
+@media (max-width: 767px)					
+	.blog--share
+		justify-content center
+		flex-direction column	
+	.blog--social
+		margin-top 5px						

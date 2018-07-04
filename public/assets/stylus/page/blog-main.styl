@@ -1,0 +1,104 @@
+.blog
+	.carousel-inner
+		background-color $dark
+		background linear-gradient($gray , $dark 40%)
+		margin-bottom 35px
+		img
+			opacity 0.4
+	.carousel-indicators
+		bottom 115px
+		left 65px		
+	.carousel-caption
+		background rgba(black, 0.8)
+		bottom 0
+		left 0
+		right 0
+		width 100%
+		text-align start
+		padding 35px
+		padding-bottom 40px
+		color $white
+	&--recent	
+		text-transform uppercase
+		color lightness( $dark , 20%)
+		display inline-block
+		font-weight bold
+	&--border
+		display inline-block
+		height 16px
+		width 2px
+		background-color red
+		margin-bottom 0
+	&__item
+		display flex
+		margin 20px 0
+	&--image
+		position relative
+		top 0
+		left 0	
+		background-color $dark
+		max-widht 397px
+		max-height 227px
+		img
+			opacity 0.5
+			width 397px
+			height 227px
+	&--date
+		padding 3px
+		text-transform uppercase
+		position absolute
+		top 0
+		left 10px
+		background-color $orange
+		color $white
+		text-align center
+		
+		p	
+			margin-bottom 5px
+			font-size 10px
+		p:nth-child(1)
+			font-size 25px	
+	&--type		
+		margin 0 20px 
+		h4
+			text-transform capitalize
+			font-weight 600
+			margin-top 0
+			color lightness($dark , 20%)
+		p
+			color lightness($dark , 50%)	
+		span 
+			color $orange	
+	&--list
+		display flex
+		flex-direction row
+		align-items center		
+		justify-content center
+		ul
+			background-color #faf9f9
+			padding 20px
+			line-height 20px
+			a.prev
+				margin-right 30px
+			a.next
+				margin-left 30px	
+			a
+				color lightness($dark , 30%)
+				text-decoration none
+			li
+				width 20px
+				height 20px
+				line-height 20px
+				text-align center
+				&:hover
+					background-color lightness($orange , 50%)	
+					border-radius 50px
+					a
+						color $white
+@media (max-width: 767px) 
+	.blog--image img 
+		width 100%	
+	.blog__item
+		flex-direction column	
+	.blog--image	
+		margin-bottom 5px						
